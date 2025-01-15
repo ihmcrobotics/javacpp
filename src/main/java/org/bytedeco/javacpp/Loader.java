@@ -266,7 +266,8 @@ public class Loader {
             String version = getVersion(groupId, artifactId, cls);
             if (version == null) {
                 if (logWarnings && isLoadLibraries()) {
-                    logger.warn("Version of " + groupId + ":" + artifactId + " could not be found.");
+                    // ihmc
+                    // logger.warn("Version of " + groupId + ":" + artifactId + " could not be found.");
                 }
                 return false;
             }
